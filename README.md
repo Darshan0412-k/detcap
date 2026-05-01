@@ -10,7 +10,7 @@
 - Jeniliya B
 
 <p align="center">
-  <img src="screenshots/banner.png" alt="DETCAP Banner" width="700"/>
+  <img src="assets/detcap_banner.png" width="900"/>
 </p>
 
 <p align="center">
