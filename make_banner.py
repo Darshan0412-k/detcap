@@ -1,24 +1,37 @@
 from PIL import Image, ImageDraw, ImageFont
 
-# Create canvas
-img = Image.new("RGB", (1200, 400), (10, 10, 20))
+# Canvas
+img = Image.new("RGB", (1400, 500), (10, 10, 15))
 draw = ImageDraw.Draw(img)
 
-# Title text
-title = "DETCAP"
-subtitle = "AI-Powered Cybersecurity Scanning Tool"
-team = "The Commit Crew"
+# Try better font (Windows default fallback safe)
+try:
+    font_title = ImageFont.truetype("arial.ttf", 80)
+    font_sub = ImageFont.truetype("arial.ttf", 35)
+    font_small = ImageFont.truetype("arial.ttf", 28)
+except:
+    font_title = ImageFont.load_default()
+    font_sub = ImageFont.load_default()
+    font_small = ImageFont.load_default()
 
-# Try default font (works on Windows)
-font_title = ImageFont.load_default()
-font_sub = ImageFont.load_default()
+# Colors (cyber style)
+green = (0, 255, 140)
+blue = (0, 180, 255)
+white = (230, 230, 230)
 
-# Draw text
-draw.text((500, 150), title, fill=(0, 255, 120), font=font_title)
-draw.text((420, 200), subtitle, fill=(200, 200, 200), font=font_sub)
-draw.text((520, 250), team, fill=(0, 180, 255), font=font_sub)
+# Title
+draw.text((480, 120), "DETCAP", fill=green, font=font_title)
 
-# Save banner
+# Subtitle
+draw.text((320, 220), "AI-POWERED CYBERSECURITY SCANNER", fill=white, font=font_sub)
+
+# Tagline
+draw.text((500, 300), "The Commit Crew", fill=blue, font=font_small)
+
+# Footer line
+draw.text((420, 360), "Network Recon • AI Analysis • Pentesting Tool", fill=(150,150,150), font=font_small)
+
+# Save
 img.save("detcap_banner.png")
 
-print("Banner created: detcap_banner.png")
+print("🔥 New banner generated: detcap_banner.png")
