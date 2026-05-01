@@ -1,5 +1,14 @@
 # DETCAP
 
+
+## 👥 Built by The Commit Crew
+
+- Darshan G
+- Shriman P
+- Gokul Anandh T
+- Jana Shree K K
+- Jeniliya B
+
 <p align="center">
   <img src="screenshots/banner.png" alt="DETCAP Banner" width="700"/>
 </p>
