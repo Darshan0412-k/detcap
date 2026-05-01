@@ -1,0 +1,98 @@
+
+<html>
+<head>
+<title>DETCAP Report</title>
+<style>
+body { font-family: Arial; background:#0f172a; color:white; }
+h1 { color:#38bdf8; }
+table { border-collapse: collapse; width:100%; margin-bottom:20px; }
+th, td { border:1px solid #555; padding:8px; }
+th { background:#1e293b; }
+.section { margin-bottom:30px; }
+</style>
+</head>
+<body>
+
+<h1>DETCAP Security Report</h1>
+<p><b>Target:</b> 192.168.1.1</p>
+<p><b>Profile:</b> balanced</p>
+
+<div class="section">
+<h2>Services</h2>
+<table>
+<tr><th>Port</th><th>Service</th><th>Version</th></tr>
+
+</table>
+</div>
+
+<div class="section">
+<h2>CVEs</h2>
+<table>
+<tr><th>CVE</th><th>Severity</th><th>Description</th></tr>
+
+</table>
+</div>
+
+<div class="section">
+<h2>Attack Insights</h2>
+<table>
+<tr><th>Service</th><th>Risk</th><th>Defense</th></tr>
+
+</table>
+</div>
+
+<div class="section">
+<h2>AI Analysis</h2>
+<pre>Based on the scan results, here's my analysis:
+
+**Services Running:**
+
+* Port 80 is open and responding to HTTP requests
+* Port 443 is open and responding to HTTPS requests
+* Port 22 is open and responding to SSH requests
+* Port 3389 is open and responding to RDP requests
+
+**Risks:**
+
+* Unpatched vulnerabilities in outdated software (e.g., Windows XP)
+* Misconfigured services allowing unauthorized access (e.g., unsecured RDP)
+RDP)
+* Outdated firmware on network devices (e.g., routers, switches)
+
+**CVEs:**
+
+* CVE-2020-0683: Unauthenticated Remote Command Injection vulnerability in 
+Exchange Server
+* CVE-2019-1040: SQL injection vulnerability in older versions of WordPress
+WordPress
+
+**Attacker Perspective (High-Level):**
+
+* An attacker could use the unpatched vulnerabilities to gain initial acces
+access to the network.
+* Once inside, they could move laterally using RDP and SSH credentials obta
+obtained from misconfigured services.
+* They might also exploit outdated firmware on network devices to gain furt
+further control.
+
+**Defense:**
+
+* Patch all identified vulnerabilities as soon as possible
+* Secure RDP and SSH services with strong authentication and rate limiting
+* Update firmware on network devices to the latest versions
+* Implement a web application firewall (WAF) to block malicious traffic
+* Consider implementing a zero-trust network architecture to limit lateral 
+movement
+
+**Suggestions:**
+
+* Perform regular vulnerability scanning and penetration testing to identif
+identify and remediate potential issues.
+* Implement a configuration management system to ensure consistent security
+security settings across the network.
+* Train users on secure computing practices and incident response procedure
+procedures.</pre>
+</div>
+
+</body>
+</html>

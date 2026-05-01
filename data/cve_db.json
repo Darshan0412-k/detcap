@@ -1,0 +1,34 @@
+{
+  "ssh": [
+    {
+      "version": "OpenSSH_7",
+      "cve": "CVE-2018-15473",
+      "description": "Username enumeration vulnerability in OpenSSH",
+      "severity": "MEDIUM"
+    }
+  ],
+  "smb": [
+    {
+      "version": "",
+      "cve": "CVE-2017-0144",
+      "description": "SMBv1 vulnerability (EternalBlue)",
+      "severity": "CRITICAL"
+    }
+  ],
+  "rpc": [
+    {
+      "version": "",
+      "cve": "CVE-2022-26809",
+      "description": "Windows RPC runtime vulnerability",
+      "severity": "HIGH"
+    }
+  ],
+  "vmware-auth": [
+    {
+      "version": "VMware Authentication Daemon",
+      "cve": "CVE-2020-3952",
+      "description": "VMware authentication bypass vulnerability",
+      "severity": "HIGH"
+    }
+  ]
+}
