@@ -2,7 +2,6 @@
 DETCAP v1.0.1 — AI-Powered Network Reconnaissance & Security Analysis Tool
 Author: Darshan G
 """
-
 import argparse
 import ipaddress
 import json
@@ -16,14 +15,16 @@ from rich.panel import Panel
 from rich.prompt import Prompt
 from rich.table import Table
 
-from analysis.ai_explainer import AIExplainer
-from analysis.attack_advisor import AttackAdvisor
-from analysis.cve_mapper import CVEMapper
-from analysis.fingerprint import FingerprintEngine
-from core.scanner import PortScanner
-from core.service_detector import ServiceDetector
-from report_generator import generate_html_report
-from stealth_scan import StealthScanner
+from .analysis.ai_explainer import AIExplainer
+from .analysis.attack_advisor import AttackAdvisor
+from .analysis.cve_mapper import CVEMapper
+from .analysis.fingerprint import FingerprintEngine
+
+from .core.scanner import PortScanner
+from .core.service_detector import ServiceDetector
+
+from .report_generator import generate_html_report
+from .stealth_scan import StealthScanner
 
 VERSION = "1.0.1"
 

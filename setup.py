@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "detcap=detcap:main"
+            "detcap=detcap.detcap:main"
         ]
     },
     python_requires=">=3.10",

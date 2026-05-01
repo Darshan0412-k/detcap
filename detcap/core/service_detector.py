@@ -1,4 +1,4 @@
-from utils.banner import grab_banner
+from ..utils.banner import grab_banner
 
 class ServiceDetector:
     def detect(self, target, port):
